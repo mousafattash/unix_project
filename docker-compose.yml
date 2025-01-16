@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  app:
+    image: php-backend-image  # Replace this with the image name provided by your teammate
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: mypassword
+      MYSQL_DATABASE: dictionary
+
+  jenkins:
+    image: jenkins/jenkins:lts
+    ports:
+      - "8081:8080"
+    volumes:
+      - ./jenkins-data:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
