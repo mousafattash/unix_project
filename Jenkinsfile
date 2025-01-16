@@ -12,7 +12,10 @@ pipeline {
             steps {
                 sh '''
                    cd unix_project
-                   docker compose down || true
+                   docker ps -a
+                   pwd
+                   docker compose down -v
+                   docker system prune -a
                 '''
             }
         }
