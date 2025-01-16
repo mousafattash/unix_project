@@ -3,8 +3,11 @@ pipeline {
     stages {
         stage('Pull Code') {
             steps {
-                sh 'rm -rf unix_project || true'
-                sh 'git clone https://github.com/mousafattash/unix_project.git'
+                sh'''
+                ls -l
+                rm -rf unix_project || true
+                git clone https://github.com/mousafattash/unix_project.git
+                '''
             }
         }
         
