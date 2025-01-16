@@ -5,7 +5,6 @@ pipeline {
             steps {
                 sh 'rm -rf unix_project || true'
                 sh 'git clone https://github.com/mousafattash/unix_project.git'
-                sh 'cd unix_project && git pull origin main'
             }
         }
         
