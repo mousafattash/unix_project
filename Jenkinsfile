@@ -13,7 +13,7 @@ pipeline {
             steps {
                 sh '''
                    cd unix_project
-                   docker-compose down || true
+                   docker compose down || true
                 '''
             }
         }
@@ -22,7 +22,7 @@ pipeline {
             steps {
                 sh '''
                    cd unix_project
-                   docker-compose up -d
+                   docker compose up -d
                 '''
             }
         }
