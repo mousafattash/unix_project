@@ -22,7 +22,7 @@ pipeline {
             steps {
                 sh '''
                    cd unix_project
-                   docker-compose up --build -d
+                   docker-compose up -d
                 '''
             }
         }
