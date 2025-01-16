@@ -18,7 +18,6 @@ pipeline {
                    docker ps -a
                    pwd
                    docker compose down -v
-                   docker system prune -a -f
                 '''
             }
         }
