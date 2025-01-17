@@ -1,7 +1,7 @@
 COMMIT_MESSAGE="Automated commit by script"
 JENKINS_JOB_NAME="unix"
 JENKINS_URL="http://192.168.1.14:8080"
-JENKINS_CLI_JAR="/home/vboxuser/jenkins-cli.jar"
+JENKINS_CLI_JAR="jenkins-cli.jar"
 JENKINS_USER="root"
 JENKINS_TOKEN="1104b117c9cc42339592cb2a7ce735056f"
 
