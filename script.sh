@@ -17,5 +17,3 @@ JENKINS_JOB_URL="$JENKINS_URL/job/$JENKINS_JOB_NAME/build?token=$JENKINS_TOKEN"
 curl -X POST "$JENKINS_JOB_URL" \
     --user "$JENKINS_USER:$JENKINS_TOKEN" \
     --fail || { echo "Failed to trigger Jenkins job"; }
-
-echo "Jenkins job triggered successfully."
