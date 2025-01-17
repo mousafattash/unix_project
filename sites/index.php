@@ -46,7 +46,7 @@ $conn->close();
 </head>
 <body>
     <div class="container">
-        <h1>Dictionary App v4</h1>
+        <h1>Dictionary App</h1>
         <form method="post" action="">
             <div class="search-box">
                 <input type="text" name="word" id="searchInput" placeholder="Enter a word..." required>
