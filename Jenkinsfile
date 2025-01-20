@@ -7,7 +7,6 @@ pipeline {
                 if [ -d "unix_project" ]; then
                     echo "Directory exists. Pulling latest changes..."
                     cd unix_project
-                    
                     git pull origin main
                 else
                     echo "Directory does not exist. Cloning repository..."
